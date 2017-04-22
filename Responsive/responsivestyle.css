@@ -1,0 +1,45 @@
+
+.content {
+	box-sizing:border-box;
+	min-width: 10vmin;
+	position:relative;
+	width:30vmin;
+	height:30vmin;
+	padding:12vmin;
+	margin-top:30vh;
+	margin-left:37vw;
+    border: 5px solid green;
+	float:left;
+	background-color:red;
+	color:white;
+	text-align:center;
+}
+
+.hd{
+color:white;
+background-color:purple;
+width:99vw;
+}
+@media only screen and (min-width: 800px) {
+    .content {
+        background-color: red;
+    }
+}
+
+h1{
+position:absolute;
+color:black;
+
+}
+
+h4{
+background-color:purple;
+}
+
+.container{
+position:relative;
+float:left;
+}
+
+
+}

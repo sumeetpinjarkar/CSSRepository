@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="name">name</div>
+<div id="empty">empty</div>
+
+<script>
+function Person(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+	 
+	this.name = function () {
+    return this.firstName + " " + this.lastName;
+	};
+}
+String.prototype.isEmpty=function(){
+		if(this.length === 0 || !this.trim())
+		{return true;}
+		else{return false;}
+	};
+
+var p1 = new Person("John", "Doe");
+var p2 = new Person("Sally", "Rally");
+var str1=p1.name();
+var str2="";
+var str3="Non Empty String";
+var str4=null;
+document.getElementById("name").innerHTML = "Full Name: "+p1.name();
+document.getElementById("name").style.color="blue";
+document.getElementById("empty").innerHTML = "For null String isEmpty = " + str1.isEmpty() + "<br>For Empty String isEmpty = " 												+ str2.isEmpty() + "<br>For Non Empty String isEmpty = " + str3.isEmpty();
+document.getElementById("empty").style.color="green";
+</script>
+</body>
+</html>

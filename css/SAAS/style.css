@@ -1,0 +1,63 @@
+tbody {
+  color: brown;
+  background-color: red;
+  width: 300px;
+  border: 25px dashed black;
+  padding: 25px;
+  margin-top: 10px;
+  margin-left: 425px; }
+  tbody p {
+    background-color: #ffffff;
+    color: #1A237E;
+    padding: 15px; }
+  tbody ul {
+    background-color: #ffffff; }
+  tbody #list {
+    background-color: lightgrey;
+    border: 5px dashed black; }
+
+.diversity {
+  background-color: red;
+  width: 300px;
+  border: 25px dashed black;
+  padding: 25px;
+  margin-top: 10px;
+  margin-left: 425px; }
+  .diversity p {
+    background-color: #ffffff;
+    color: #1A237E;
+    padding: 15px; }
+  .diversity ul {
+    background-color: #ffffff; }
+  .diversity #list {
+    background-color: lightgrey;
+    border: 5px dashed black; }
+
+.Box {
+  background-color: red;
+  width: 300px;
+  border: 25px dashed black;
+  padding: 25px;
+  margin-top: 10px;
+  margin-left: 425px; }
+  .Box p {
+    background-color: #ffffff;
+    color: #1A237E;
+    padding: 15px; }
+  .Box ul {
+    background-color: #ffffff; }
+  .Box #list {
+    background-color: lightgrey;
+    border: 5px dashed black; }
+
+body {
+  background-color: lightgrey;
+  text-align: center; }
+
+table {
+  border: 25px solid yellow; }
+
+li {
+  color: magenta; }
+
+/*# sourceMappingURL=style.css.map */

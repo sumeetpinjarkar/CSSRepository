@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+
+
+String.prototype.isEmpty=function(){
+		if(this.length === 0 || !this.trim())
+		{return true;}
+		else{return false;}
+	};
+
+function Person(n, id, a) {
+	if(a<=0 || n.isEmpty())
+	{
+	alert("invalid Input");
+	return null;
+	}
+	else{
+    this.name = n;
+    this.Id = id;
+    this.age = a; }
+};
+
+
+$(function(){
+$("button").click(function(){
+		var n,i,a,result;
+		n=$(".i1").val();
+		i=$(".i2").val();
+		a=$(".i3").val();
+		var obj=new Person(n, i, a);
+		
+		var jsonobj=JSON.stringify(obj);
+		if(jsonobj.length<1){
+		alert("Incomplete data")
+		}
+		else{
+		localStorage.setItem("personTable", jsonobj);
+		result=localStorage.getItem("personTable");
+		$("#result").append("<br>" + result);
+		$("input.i2").val(0);$("input.i1").val("");$("input.i").val(0);
+		}		
+	});
+})
+
+</script>
+<style>
+.formDiv{
+display:inline-block;
+position:relative;
+/*background-color:#cf6dea;*/
+font-family:"Times New Roman";
+margin-left:25vw;
+margin-top:20vh;
+padding:10vmin;
+
+border:5px solid purple;
+}
+
+</style>
+</head>
+
+<body style="white">
+<div class="formDiv">
+<table>
+<tr><td>Enter Your Name:</td><td><input type="text" class="i1" required></input></td></tr>
+<tr><td>Enter ID: </td><td><input type="text" class="i2" required></input></td></tr>
+<tr><td>Enter Your Age: </td><td><input type="text" class="i3" required></input></td></tr>
+</table>
+<button>Submit</button>
+</div>
+<div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+img {
+    float: top;
+    margin: 10%;
+}
+
+body{
+    background-color:pink;
+}
+
+section
+{
+	margin-left: 40%;
+	margin-top: 1%;
+}
+
+.Box{
+    
+    background-color: white;
+    width: 300px;
+    border: 25px dashed yellow;
+    padding: 25px;
+    margin-top: 10px;
+    margin-left: 425px;
+}
+div{
+    color:magenta;
+    text-align:center;
+}
+p {
+    margin-top: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+#para {
+    text-align: center;
+    color: red;
+	margin-top:0px
+}
+
+.class1 {
+    text-align: center;
+    color: red;
+}
+

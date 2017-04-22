@@ -1,0 +1,46 @@
+p {
+  background-color: #ffffff;
+  color: #1A237E;
+  padding: 15px;
+}
+ul {
+  background-color: #cf142b;
+}
+#list {
+  background-color: lightgrey;
+}
+tbody {
+  color: brown;
+  background-color: #ff0000;
+  width: 300px;
+  border: 25px dashed #000000;
+  padding: 25px;
+  margin-top: 10px;
+  margin-left: 425px;
+}
+.diversity {
+  background-color: #ffff00;
+  width: 300px;
+  border: 25px dashed #ffc0cb;
+  padding: 25px;
+  margin-top: 10px;
+  margin-left: 425px;
+}
+.Box {
+  background-color: #ff0000;
+  width: 300px;
+  border: 25px dashed #000000;
+  padding: 25px;
+  margin-top: 10px;
+  margin-left: 425px;
+}
+body {
+  background-color: lightgrey;
+  text-align: center;
+}
+table {
+  border: 5px solid yellow;
+}
+li {
+  color: magenta;
+}

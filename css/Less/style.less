@@ -1,0 +1,47 @@
+@blue: #00214D;
+@red: #CF142B;
+@white: #FFF;
+
+
+p {
+  background-color: #ffffff;
+  color: #1A237E;
+  padding: 15px;
+}
+ul {
+  background-color: @red;
+}
+#list {
+  background-color: lightgrey;
+}
+tbody {
+  color: brown;
+  .Boxstyle(red,black)
+}
+.Boxstyle(@color1:red,@color2:blue){
+
+  background-color: @color1;
+  width: 300px;
+  border: 25px dashed @color2;
+  padding: 25px;
+  margin-top: 10px;
+  margin-left: 425px;
+
+}
+.diversity{
+.Boxstyle(yellow,pink)
+}
+
+.Box {
+.Boxstyle(red,black)
+}
+body {
+  background-color: lightgrey;
+  text-align: center;
+}
+table {
+  border: 5px solid yellow;
+}
+li {
+  color: magenta;
+}

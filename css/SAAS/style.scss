@@ -1,0 +1,54 @@
+$bwidth:25px;
+
+
+@mixin Boxstyle($color1,$color2){
+
+  background-color: $color1;
+  width: 300px;
+  border: $bwidth dashed $color2;
+  padding: $bwidth;
+  margin-top: 10px;
+  margin-left: 425px;
+
+
+p{
+  background-color: #ffffff;
+  color: #1A237E;
+  padding: 15px;
+}
+
+ul{
+  background-color: #ffffff;
+}
+
+#list{
+	background-color:lightgrey;
+	border:$bwidth/5 dashed black;
+	}
+
+
+}
+tbody{
+	color:brown;
+	@include Boxstyle(red,black);
+}
+.diversity{
+@include Boxstyle(red,black);
+}
+.Box{
+  @include Boxstyle(red,black);
+}
+
+body{
+	background-color:lightgrey;
+	text-align:center;
+	}
+
+
+table {
+	border : 25px solid yellow;
+	}
+
+li{
+  color: magenta;
+}

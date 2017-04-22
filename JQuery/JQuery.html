@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+var i=0;
+
+$(document).ready(function(){
+    $("input.i1").keypress(function(){
+        $("input.i2").val(i+=1);
+    });
+});
+
+$(function(){
+	$("h1").hover(
+	function(){$(this).css({'color':'yellow'});},
+	function(){$(this).css({'color':'black'});})
+	})
+
+$(function(){
+	$("input.i1").hover(
+	function(){$('div').css({'color': 'black'});alert("I am Counting!");},
+	function(){$('div').css({'color': 'White'});})
+})
+
+$(function(){
+	$(":button").hover(
+	function(){$(this).css({'background-color': 'yellow','color':'black'});}, 
+	function(){$(this).css({'background-color': 'indianred','color':'white'});})
+})
+
+
+$(function(){
+$("button").click(function(){$("input.i2").val(0);$("input.i1").val("");i=0;});
+})
+</script>
+<style>
+div{
+display:inline-block;
+position:relative;
+background-color:#cf6dea;
+font-family:"Times New Roman";
+margin-left:25vw;
+margin-top:20vh;
+padding:10vmin;
+
+border:5px solid purple;
+}
+
+</style>
+</head>
+
+<body style="background-color:lightgrey">
+<h1>Just Hover Over!</h1>
+<div>
+<table>
+<tr><td>Enter Text Here:</td><td><input type="text" class="i1"></input></td></tr>
+<tr><td>Count of Keys Pressed: </td><td><input type="text" class="i2"></input></td></tr>
+</table>
+<button>reset</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+
+var i=parseInt(localStorage.getItem("Likes"));
+var j=parseInt(localStorage.getItem("DisLikes"));
+
+$(function(){
+$("span.s1").text(i);
+$("span.s2").text(j);
+});
+
+$(function(){
+	$("button.b1").click(
+	function(){
+	//i+=1;
+	$("span.s1").text(i+=1);
+	localStorage.setItem("Likes",i);}
+	)
+});
+$(function(){
+	$("button.b2").click(
+	function(){
+	//j+=1;
+	$("span.s2").text(j+=1);
+	localStorage.setItem("DisLikes",j); }
+	)
+});
+
+
+</script>
+<style>
+div{
+display:inline-block;
+position:relative;
+background-color:white;
+font-family:"Times New Roman";
+width:20vw;
+margin-left:25vw;
+margin-top:20vh;
+padding:10vmin;
+
+border:5px solid purple;
+}
+.b1{
+display:inline-block;
+position:relative;
+}
+.b2{
+display:inline-block;
+position:relative;
+}
+</style>
+</head>
+
+<body style="background-color:lightgrey">
+
+<div>
+<img src="super.jpg" width=60% align=center alt="Superman">
+<p>
+<button class="b1">Like</button>
+<button class="b2">Dislike</button>
+<p>Likes: <span class="s1"></span></p>
+<p>DisLikes: <span class="s2"></span></p>
+</p>
+</div>
+
+</body>
+</html>
